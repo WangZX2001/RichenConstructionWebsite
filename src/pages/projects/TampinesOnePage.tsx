@@ -9,10 +9,10 @@ import {
 import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import tampinesImage from "figma:asset/8f01deb045056c89cb54cbd27a4071558a70d768.png";
-import tampinesImage2 from "figma:asset/24d62e11559b97f36008788fc4c898d26f4f3414.png";
-import tampinesImage3 from "figma:asset/d2611c1bf58e940893489f01e50f3600ef9c33f6.png";
-import tampinesImage4 from "figma:asset/e81ccf8db7ac31dedb19df02e27e70fb759bdb8d.png";
+import tampinesImage from "../../../photo/Tam1.JPG";
+import tampinesImage2 from "../../../photo/Tam2.JPG";
+import tampinesImage3 from "../../../photo/Tam3.JPG";
+import tampinesImage4 from "../../../photo/Tam1.JPG";
 
 export function TampinesOnePage() {
   const images = [

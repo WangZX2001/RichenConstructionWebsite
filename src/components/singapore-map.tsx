@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { MapPin, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import projectImage from "figma:asset/7fea718067f4803b2a85cb3a259bbd4c4ec28fc1.png";
-import tampinesImage from "figma:asset/8f01deb045056c89cb54cbd27a4071558a70d768.png";
+import projectImage from "../../photo/king albert project.jpg";
+import tampinesImage from "../../photo/Tam1.JPG";
 
 // Custom map style - Light lively grey theme
 const mapStyles = [

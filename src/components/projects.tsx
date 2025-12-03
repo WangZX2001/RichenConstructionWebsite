@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Building2 } from "lucide-react";
-import tampinesImage from "figma:asset/8f01deb045056c89cb54cbd27a4071558a70d768.png";
+import tampinesImage from "../../photo/Tam1.JPG";
 
 export function Projects() {
   const projects = [
