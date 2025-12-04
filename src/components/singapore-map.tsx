@@ -141,24 +141,26 @@ export function SingaporeMap() {
       !(window as any).google
     ) {
       const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&loading=async`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}`;
       script.async = true;
       script.defer = true;
       document.head.appendChild(script);
 
       script.onload = () => {
-        // Add a small delay to ensure Google Maps is fully initialized
+        // Add a delay to ensure Google Maps is fully initialized
         setTimeout(() => {
-          initMap();
-        }, 100);
+          if ((window as any).google?.maps?.Map) {
+            initMap();
+          }
+        }, 500);
       };
-    } else if ((window as any).google) {
+    } else if ((window as any).google?.maps?.Map) {
       initMap();
     }
   }, []);
 
   const initMap = () => {
-    if (!mapRef.current) return;
+    if (!mapRef.current || !(window as any).google?.maps?.Map) return;
 
     // Create map with custom grey styling
     const mapInstance = new google.maps.Map(mapRef.current, {
